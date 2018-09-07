@@ -1,3 +1,18 @@
+@charset "utf-8";
+
+/*The above determines the charcters the webpage will process, the below allows the webpage to access the specified fonts.*/
+@font-face {
+    font-family: Champagne;
+    src: url("cac_champagne.woff") format('.woff'),
+        url("cac_champagne.ttf") format('truetype');
+    font-family: Grunge;
+    src: url("1942.woff") format('.woff'),
+        url("1942.ttf") format('truetype');
+    font-family: Dobkin;
+    src: url("DobkinPlain.woff") format('.woff'),
+        url("DobkinPlain.ttf") format('truetype')
+}
+
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 2
@@ -11,6 +26,106 @@
 
 */
 /* Structural Styles */
+/*The following determines thebackground color of the document.*/
+html {
+    background-color: hsl(91, 8%, 56%);
+}
+
+/*This determines the font and background of all body elements.*/
+body {
+    background-color: hsl(58, 31%, 84%);
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif
+}
+
+/*This makes the backgrund of header elements black.*/
+header {
+    background-color: black;
+}
+
+/*This determines the amount of space the text in the paragraph tag has around it.*/
+p {
+    margin: 0px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/*All paragraph elements that are children of body elements are 1.1em in size and centered.*/
+body>p {
+    font-size: 1.1em;
+    text-align: center;
+}
+
+/*This determines the font size, alignment, and padding.*/
+address {
+    font-size: 0.9em;
+    align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 /* Navigation Styles */
+/*This is he font and padding of navigation elements.*/
+nav a {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*The following two styles determine the style of links.*/
+nav a:link,
+nav a:visited {
+    color: white;
+    text-decoration: none;
+    background-color: hsla(0, 0%, 42%, 0.4);
+}
+
+nav a:active,
+nav a:hover {
+    color: hsla(0, 0%, 100%, 0.7);
+    background-color: hsla(0, 0%, 42%, 0.7);
+}
+
 /* Section Styles */
+/*This is what determines the padding and font of h1 elements within section elements with playbill class.*/
+section.playbill h1 {
+    font-size: 3em;
+    font-weight: normal;
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-right: 0px;
+    padding-left: 20px;
+}
+
+/*The following 4 determine the colors and fonts of the h1 elements within the section elements with th given IDs.*/
+section#play1 h1 {
+    background-color: hsl(240, 100%, 88%);
+    font-family: 'Champagne', cursive;
+}
+
+section#play2 h1 {
+    background-color: hsl(25, 88%, 73%);
+    font-family: 'Grunge', 'Times New Roman', Times, serif;
+}
+
+section#play3 h1 {
+    background-color: hsl(0, 100%, 75%);
+    font-family: 'Impact', Charcoal, sans-serif;
+}
+
+section#play4 h1 {
+    background-color: hsl(296, 86%, 86%);
+    font-family: 'Dobkin', cursive;
+}
+
 /* Description List Styles */
+/*This idetermines the font size, style, and color of the director names.*/
+dt {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: hsla(0, 0%, 0%, 0.4)
+}
+
+dd
