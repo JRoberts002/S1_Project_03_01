@@ -3,14 +3,14 @@
 /*The above determines the charcters the webpage will process, the below allows the webpage to access the specified fonts.*/
 @font-face {
     font-family: Champagne;
-    src: url("cac_champagne.woff") format('.woff'),
+    src: url("cac_champagne.woff") format('woff'),
         url("cac_champagne.ttf") format('truetype');
     font-family: Grunge;
-    src: url("1942.woff") format('.woff'),
+    src: url("1942.woff") format('woff'),
         url("1942.ttf") format('truetype');
     font-family: Dobkin;
-    src: url("DobkinPlain.woff") format('.woff'),
-        url("DobkinPlain.ttf") format('truetype')
+    src: url("DobkinPlain.woff") format('woff'),
+        url("DobkinPlain.ttf") format('truetype');
 }
 
 /*
@@ -31,7 +31,7 @@ html {
     background-color: hsl(91, 8%, 56%);
 }
 
-/*This determines the font and background of all body elements.*/
+/* This determines the font and background of all body elements. */
 body {
     background-color: hsl(58, 31%, 84%);
     font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif
@@ -45,10 +45,7 @@ header {
 /*This determines the amount of space the text in the paragraph tag has around it.*/
 p {
     margin: 0px;
-    padding-top: 5px;
-    padding-bottom: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 5px 25px 25px 25px;
 }
 
 /*All paragraph elements that are children of body elements are 1.1em in size and centered.*/
@@ -59,18 +56,18 @@ body>p {
 
 /*This determines the font size, alignment, and padding.*/
 address {
+    font: normal;
     font-size: 0.9em;
-    align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
 }
 
 /* Navigation Styles */
 /*This is he font and padding of navigation elements.*/
 nav a {
+    color: white;
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0px 10px 0px;
 }
 
 /*The following two styles determine the style of links.*/
@@ -93,30 +90,39 @@ section.playbill h1 {
     font-size: 3em;
     font-weight: normal;
     margin: 0px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    padding-right: 0px;
-    padding-left: 20px;
+    padding: 20px 10px 0px 20px;
 }
 
-/*The following 4 determine the colors and fonts of the h1 elements within the section elements with th given IDs.*/
-section#play1 h1 {
+/*The following 8 determine the colors and fonts of the h1 elements within the section elements with th given IDs.*/
+section#play1 {
     background-color: hsl(240, 100%, 88%);
+}
+
+section#play1 h1 {
     font-family: 'Champagne', cursive;
 }
 
-section#play2 h1 {
+section#play2 {
     background-color: hsl(25, 88%, 73%);
+}
+
+section#play2 h1 {
     font-family: 'Grunge', 'Times New Roman', Times, serif;
 }
 
-section#play3 h1 {
+section#play3 {
     background-color: hsl(0, 100%, 75%);
+}
+
+section#play3 h1 {
     font-family: 'Impact', Charcoal, sans-serif;
 }
 
-section#play4 h1 {
+section#play4 {
     background-color: hsl(296, 86%, 86%);
+}
+
+section#play4 h1 {
     font-family: 'Dobkin', cursive;
 }
 
@@ -128,4 +134,8 @@ dt {
     color: hsla(0, 0%, 0%, 0.4)
 }
 
-dd
+dd {
+    font-size: 1.3em;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
